@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Forms Lab</title>
+    <meta name="description" content="Introduction to HTML Forms in the Learn.co curriculum">
+    <meta name="author" content="Flatiron School">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script defer src="index.js"></script>
+  </head>
+
+  <body>
+    <header>
+        <h3>🍔 Flatburger 🍔</h3>
+    </header>
+
+    <br/>
+
+    <!-- Food Dropdown Select -->
+    <select id="food-select">
+      <option value="all">All</option>
+      <option value="healthy">Healthy</option>
+    </select>
+
+    <!-- Food Menu -->
+    <div id="food-menu">
+        <!-- Food Images Here -->
+    </div>
+
+    <!-- Food Details -->
+    <div id="food-detail">
+        <img class="detail-image" src="images/image-placeholder.jpg" alt="Insert Name Here" />
+        <h2 class="name">Insert Name Here</h2>
+    </div>
+
+    <h3>Description:</h3>
+    <p id='description-display'>
+        Insert food description here
+    </p>
+
+    <!-- New Food Form -->
+    <form id="new-food-form">
+      <h4>Add New Food</h4>
+      <label for="new-name">Name: </label>
+      <input type="text" name="name" id="new-name" />
+      <label for="new-image">Image: </label>
+      <input type="text" name="image" id="new-image" />
+      <label for="new-description">Description: </label>
+      <textarea name="description" id="new-description"></textarea>
+      <label for="healthy-select">Healthy? </label>
+      <select name="healthy" id="healthy-select">
+        <option value="healthy">Healthy</option>
+        <option value="">Unhealthy</option>
+      </select>
+      <input type="submit" value="Add Food" />
+    </form>
+  </body>
+</html>
